@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Buy property in Dubai with premium ROI. Expert guidance on Dubai off-plan investment, UAE Golden Visa property, and the best Dubai ROI areas. Invest with confidence.">
+<meta name="keywords" content="buy property in Dubai, Dubai off-plan investment, UAE Golden Visa property, best Dubai ROI areas, Dubai real estate investment">
+<title>Anthony David | Premium Dubai Real Estate Investment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9A96E;
+    --gold-light: #E8D5A3;
+    --gold-dark: #8B6914;
+    --dark: #0A0A0B;
+    --dark-2: #111114;
+    --dark-3: #1A1A1F;
+    --dark-4: #242429;
+    --text: #F5F0E8;
+    --text-muted: #8A8580;
+    --text-dim: #5A5550;
+    --border: rgba(201,169,110,0.2);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--dark); color:var(--text); font-family:var(--sans); font-size:16px; line-height:1.7; overflow-x:hidden; }
+
+  /* NAV */
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:1.5rem 4rem; display:flex; justify-content:space-between; align-items:center; background:rgba(10,10,11,0.85); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
+  .nav-logo { font-family:var(--serif); font-size:1.5rem; font-weight:300; letter-spacing:0.15em; color:var(--gold); }
+  .nav-logo span { font-style:italic; color:var(--text); }
+  .nav-links { display:flex; gap:2.5rem; list-style:none; }
+  .nav-links a { color:var(--text-muted); text-decoration:none; font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; font-weight:400; transition:color 0.3s; }
+  .nav-links a:hover { color:var(--gold); }
+  .nav-cta { background:transparent; border:1px solid var(--gold); color:var(--gold); padding:0.6rem 1.8rem; font-family:var(--sans); font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase; cursor:pointer; transition:all 0.3s; text-decoration:none; }
+  .nav-cta:hover { background:var(--gold); color:var(--dark); }
+
+  /* HERO */
+  .hero { min-height:100vh; display:flex; align-items:center; position:relative; overflow:hidden; padding:0 4rem; }
+  .hero-bg { position:absolute; inset:0; background:linear-gradient(135deg, #0A0A0B 0%, #111118 40%, #0D0F14 100%); }
+  .hero-grid { position:absolute; inset:0; background-image:linear-gradient(rgba(201,169,110,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,0.04) 1px, transparent 1px); background-size:80px 80px; }
+  .hero-glow { position:absolute; top:20%; right:10%; width:600px; height:600px; background:radial-gradient(circle, rgba(201,169,110,0.08) 0%, transparent 70%); pointer-events:none; }
+  .hero-content { position:relative; max-width:700px; }
+  .hero-badge { display:inline-flex; align-items:center; gap:0.6rem; border:1px solid var(--border); padding:0.4rem 1.2rem; font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:2rem; }
+  .hero-badge::before { content:''; width:6px; height:6px; background:var(--gold); border-radius:50%; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  h1 { font-family:var(--serif); font-size:clamp(3rem, 6vw, 5.5rem); font-weight:300; line-height:1.1; margin-bottom:1.5rem; }
+  h1 em { font-style:italic; color:var(--gold); }
+  .hero-sub { font-size:1rem; color:var(--text-muted); max-width:480px; line-height:1.8; margin-bottom:3rem; font-weight:300; }
+  .hero-actions { display:flex; gap:1.5rem; align-items:center; flex-wrap:wrap; }
+  .btn-primary { background:var(--gold); color:var(--dark); padding:1rem 2.5rem; font-family:var(--sans); font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; cursor:pointer; border:none; text-decoration:none; display:inline-block; transition:all 0.3s; }
+  .btn-primary:hover { background:var(--gold-light); }
+  .btn-ghost { color:var(--text-muted); font-size:0.8rem; letter-spacing:0.1em; text-decoration:none; display:flex; align-items:center; gap:0.5rem; transition:color 0.3s; }
+  .btn-ghost:hover { color:var(--gold); }
+  .btn-ghost::after { content:'→'; }
+  .hero-stats { position:absolute; right:4rem; bottom:4rem; display:flex; gap:3rem; }
+  .hero-stat { text-align:center; }
+  .hero-stat-num { font-family:var(--serif); font-size:2.5rem; font-weight:300; color:var(--gold); line-height:1; }
+  .hero-stat-label { font-size:0.7rem; color:var(--text-dim); letter-spacing:0.15em; text-transform:uppercase; margin-top:0.4rem; }
+
+  /* SECTION BASE */
+  section { padding:7rem 4rem; }
+  .section-label { font-size:0.7rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
+  h2 { font-family:var(--serif); font-size:clamp(2rem, 4vw, 3.5rem); font-weight:300; line-height:1.15; }
+  h2 em { font-style:italic; color:var(--gold); }
+  .divider { width:60px; height:1px; background:var(--gold); margin:2rem 0; }
+
+  /* WHY DUBAI */
+  .why-dubai { background:var(--dark-2); }
+  .why-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+  .why-points { display:flex; flex-direction:column; gap:2rem; margin-top:3rem; }
+  .why-point { display:flex; gap:1.5rem; align-items:flex-start; }
+  .why-point-num { font-family:var(--serif); font-size:2rem; color:var(--gold); opacity:0.4; line-height:1; min-width:40px; }
+  .why-point h3 { font-family:var(--serif); font-size:1.2rem; font-weight:400; margin-bottom:0.3rem; }
+  .why-point p { color:var(--text-muted); font-size:0.9rem; font-weight:300; }
+  .why-visual { background:var(--dark-3); border:1px solid var(--border); padding:3rem; }
+  .why-visual-title { font-family:var(--serif); font-size:1rem; color:var(--text-muted); letter-spacing:0.1em; margin-bottom:2rem; }
+  .roi-bar { margin-bottom:1.5rem; }
+  .roi-bar-label { display:flex; justify-content:space-between; font-size:0.8rem; margin-bottom:0.5rem; }
+  .roi-bar-label span:first-child { color:var(--text-muted); }
+  .roi-bar-label span:last-child { color:var(--gold); font-weight:500; }
+  .roi-bar-track { height:3px; background:var(--dark-4); position:relative; }
+  .roi-bar-fill { height:100%; background:var(--gold); transition:width 1.5s ease; }
+
+  /* PORTFOLIO */
+  .portfolio { background:var(--dark); }
+  .portfolio-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:4rem; }
+  .property-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem; }
+  .property-card { background:var(--dark-3); border:1px solid var(--border); overflow:hidden; transition:transform 0.3s, border-color 0.3s; cursor:pointer; }
+  .property-card:hover { transform:translateY(-4px); border-color:var(--gold); }
+  .property-img { height:220px; position:relative; overflow:hidden; }
+  .property-img-bg { width:100%; height:100%; background:var(--dark-4); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:4rem; color:var(--gold); opacity:0.2; }
+  .property-img-overlay { position:absolute; inset:0; background:linear-gradient(to bottom, transparent 50%, var(--dark-3)); }
+  .property-badge { position:absolute; top:1rem; left:1rem; background:var(--gold); color:var(--dark); padding:0.25rem 0.75rem; font-size:0.65rem; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; }
+  .property-body { padding:1.5rem; }
+  .property-name { font-family:var(--serif); font-size:1.3rem; font-weight:400; margin-bottom:0.25rem; }
+  .property-loc { font-size:0.8rem; color:var(--text-muted); margin-bottom:1.2rem; display:flex; align-items:center; gap:0.3rem; }
+  .property-meta { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; border-top:1px solid var(--border); padding-top:1.2rem; }
+  .meta-item label { font-size:0.65rem; color:var(--text-dim); letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:0.2rem; }
+  .meta-item span { font-size:0.9rem; color:var(--text); font-weight:400; }
+  .meta-item .highlight { color:var(--gold); }
+
+  /* INVESTMENT PROCESS */
+  .process { background:var(--dark-2); }
+  .process-steps { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; margin-top:4rem; position:relative; }
+  .process-steps::before { content:''; position:absolute; top:2rem; left:10%; right:10%; height:1px; background:var(--border); }
+  .process-step { text-align:center; position:relative; }
+  .step-num { width:4rem; height:4rem; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; margin:0 auto 1.5rem; font-family:var(--serif); font-size:1.5rem; color:var(--gold); background:var(--dark-2); position:relative; z-index:1; }
+  .step-title { font-family:var(--serif); font-size:1.1rem; font-weight:400; margin-bottom:0.5rem; }
+  .step-text { font-size:0.83rem; color:var(--text-muted); font-weight:300; }
+
+  /* GOLDEN VISA */
+  .golden-visa { background:var(--dark); overflow:hidden; }
+  .golden-visa-inner { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:center; }
+  .visa-benefits { display:flex; flex-direction:column; gap:1.5rem; margin-top:3rem; }
+  .visa-benefit { display:flex; gap:1rem; align-items:flex-start; padding:1.2rem; background:var(--dark-3); border:1px solid var(--border); border-left:3px solid var(--gold); }
+  .visa-benefit-icon { font-size:1.2rem; line-height:1; color:var(--gold); min-width:24px; }
+  .visa-benefit h4 { font-family:var(--serif); font-size:1rem; font-weight:400; margin-bottom:0.2rem; }
+  .visa-benefit p { font-size:0.82rem; color:var(--text-muted); font-weight:300; }
+  .visa-visual { background:var(--dark-3); border:1px solid var(--border); padding:3rem; position:relative; }
+  .visa-visual::before { content:'GOLDEN VISA'; position:absolute; top:-1px; left:3rem; background:var(--gold); color:var(--dark); font-size:0.65rem; letter-spacing:0.2em; padding:0.3rem 1rem; font-weight:500; }
+  .visa-threshold { text-align:center; padding:2rem 0; border-bottom:1px solid var(--border); margin-bottom:2rem; }
+  .visa-amount { font-family:var(--serif); font-size:3.5rem; font-weight:300; color:var(--gold); line-height:1; }
+  .visa-amount-label { font-size:0.8rem; color:var(--text-muted); letter-spacing:0.1em; margin-top:0.5rem; }
+  .visa-features { display:flex; flex-direction:column; gap:1rem; }
+  .visa-feature { display:flex; justify-content:space-between; font-size:0.85rem; padding-bottom:0.8rem; border-bottom:1px solid var(--border); }
+  .visa-feature:last-child { border:none; padding:0; }
+  .visa-feature-label { color:var(--text-muted); }
+  .visa-feature-val { color:var(--text); font-weight:400; }
+
+  /* ROI CALCULATOR */
+  .roi-calc { background:var(--dark-2); }
+  .calc-wrap { max-width:800px; margin:3rem auto 0; }
+  .calc-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:start; }
+  .calc-inputs { display:flex; flex-direction:column; gap:1.5rem; }
+  .input-group label { font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); display:block; margin-bottom:0.6rem; }
+  .input-group input, .input-group select { width:100%; background:var(--dark-3); border:1px solid var(--border); color:var(--text); padding:0.8rem 1rem; font-family:var(--sans); font-size:0.9rem; outline:none; transition:border-color 0.3s; }
+  .input-group input:focus, .input-group select:focus { border-color:var(--gold); }
+  .input-group select option { background:var(--dark-3); }
+  .calc-results { background:var(--dark-3); border:1px solid var(--border); padding:2rem; }
+  .calc-results-title { font-family:var(--serif); font-size:1rem; color:var(--text-muted); margin-bottom:1.5rem; letter-spacing:0.05em; }
+  .calc-metric { margin-bottom:1.2rem; padding-bottom:1.2rem; border-bottom:1px solid var(--border); }
+  .calc-metric:last-child { border:none; margin:0; padding:0; }
+  .calc-metric-label { font-size:0.75rem; color:var(--text-dim); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.3rem; }
+  .calc-metric-val { font-family:var(--serif); font-size:2rem; color:var(--gold); font-weight:300; }
+  .calc-metric-sub { font-size:0.78rem; color:var(--text-muted); margin-top:0.2rem; }
+  .btn-calc { width:100%; background:var(--gold); color:var(--dark); border:none; padding:0.9rem; font-family:var(--sans); font-size:0.8rem; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; cursor:pointer; margin-top:0.5rem; transition:background 0.3s; }
+  .btn-calc:hover { background:var(--gold-light); }
+
+  /* AREAS */
+  .areas { background:var(--dark); }
+  .areas-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+  .area-card { background:var(--dark-3); border:1px solid var(--border); padding:2rem; position:relative; overflow:hidden; transition:border-color 0.3s; }
+  .area-card:hover { border-color:var(--gold); }
+  .area-card::after { content:attr(data-area); position:absolute; bottom:-0.5rem; right:1rem; font-family:var(--serif); font-size:4rem; color:var(--gold); opacity:0.04; font-weight:300; pointer-events:none; white-space:nowrap; }
+  .area-name { font-family:var(--serif); font-size:1.4rem; font-weight:400; margin-bottom:0.5rem; }
+  .area-type { font-size:0.72rem; color:var(--gold); letter-spacing:0.15em; text-transform:uppercase; margin-bottom:1.5rem; }
+  .area-stats { display:flex; flex-direction:column; gap:0.8rem; }
+  .area-stat-row { display:flex; justify-content:space-between; font-size:0.83rem; }
+  .area-stat-row span:first-child { color:var(--text-muted); }
+  .area-stat-row span:last-child { color:var(--text); font-weight:400; }
+  .area-roi { font-family:var(--serif); font-size:2rem; color:var(--gold); font-weight:300; margin:1.5rem 0 0.2rem; }
+  .area-roi-label { font-size:0.7rem; color:var(--text-dim); letter-spacing:0.1em; text-transform:uppercase; }
+
+  /* TESTIMONIALS */
+  .testimonials { background:var(--dark-2); }
+  .testimonial-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3rem; }
+  .testimonial-card { background:var(--dark-3); border:1px solid var(--border); padding:2rem; }
+  .testimonial-quote { font-family:var(--serif); font-size:3rem; color:var(--gold); opacity:0.4; line-height:1; margin-bottom:1rem; }
+  .testimonial-text { font-size:0.9rem; color:var(--text-muted); font-weight:300; line-height:1.8; font-style:italic; margin-bottom:1.5rem; font-family:var(--serif); }
+  .testimonial-author { display:flex; align-items:center; gap:1rem; border-top:1px solid var(--border); padding-top:1.2rem; }
+  .author-avatar { width:40px; height:40px; border-radius:50%; background:var(--gold); display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:500; color:var(--dark); }
+  .author-name { font-size:0.85rem; font-weight:500; }
+  .author-detail { font-size:0.75rem; color:var(--text-muted); }
+
+  /* CONTACT / LEAD */
+  .contact { background:var(--dark); }
+  .contact-inner { display:grid; grid-template-columns:1fr 1fr; gap:6rem; align-items:start; }
+  .contact-info { padding-top:1rem; }
+  .contact-channels { display:flex; flex-direction:column; gap:1.2rem; margin-top:2.5rem; }
+  .contact-channel { display:flex; align-items:center; gap:1rem; padding:1rem 1.2rem; border:1px solid var(--border); transition:border-color 0.3s; text-decoration:none; color:var(--text); }
+  .contact-channel:hover { border-color:var(--gold); }
+  .channel-icon { font-size:1.2rem; width:2rem; text-align:center; }
+  .channel-label { font-size:0.75rem; color:var(--text-muted); letter-spacing:0.1em; text-transform:uppercase; display:block; }
+  .channel-val { font-size:0.9rem; color:var(--gold); margin-top:0.1rem; }
+  .lead-form { background:var(--dark-3); border:1px solid var(--border); padding:2.5rem; }
+  .form-title { font-family:var(--serif); font-size:1.5rem; font-weight:400; margin-bottom:2rem; }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem; }
+  .form-field { margin-bottom:1rem; }
+  .form-field label { font-size:0.72rem; color:var(--text-muted); letter-spacing:0.1em; text-transform:uppercase; display:block; margin-bottom:0.5rem; }
+  .form-field input, .form-field select, .form-field textarea { width:100%; background:var(--dark-4); border:1px solid var(--border); color:var(--text); padding:0.8rem 1rem; font-family:var(--sans); font-size:0.9rem; outline:none; transition:border-color 0.3s; resize:none; }
+  .form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color:var(--gold); }
+  .form-field select option { background:var(--dark-4); }
+  .btn-submit { width:100%; background:var(--gold); color:var(--dark); border:none; padding:1rem; font-family:var(--sans); font-size:0.82rem; letter-spacing:0.2em; text-transform:uppercase; font-weight:500; cursor:pointer; margin-top:0.5rem; transition:background 0.3s; }
+  .btn-submit:hover { background:var(--gold-light); }
+  .form-note { font-size:0.72rem; color:var(--text-dim); text-align:center; margin-top:1rem; }
+
+  /* FOOTER */
+  footer { background:var(--dark-2); border-top:1px solid var(--border); padding:4rem 4rem 2rem; }
+  .footer-top { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:4rem; margin-bottom:3rem; }
+  .footer-brand { font-family:var(--serif); font-size:1.8rem; font-weight:300; color:var(--gold); letter-spacing:0.15em; margin-bottom:1rem; }
+  .footer-tagline { font-size:0.83rem; color:var(--text-muted); font-weight:300; max-width:260px; line-height:1.7; }
+  .footer-col h5 { font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:1.2rem; }
+  .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:0.6rem; }
+  .footer-col ul a { color:var(--text-muted); text-decoration:none; font-size:0.85rem; font-weight:300; transition:color 0.3s; }
+  .footer-col ul a:hover { color:var(--gold); }
+  .footer-bottom { border-top:1px solid var(--border); padding-top:2rem; display:flex; justify-content:space-between; align-items:center; }
+  .footer-legal { font-size:0.75rem; color:var(--text-dim); }
+  .footer-rera { font-size:0.72rem; color:var(--text-dim); }
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-btn { position:fixed; bottom:2rem; right:2rem; z-index:200; background:#25D366; color:#fff; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; text-decoration:none; box-shadow:0 4px 20px rgba(37,211,102,0.4); transition:transform 0.3s; }
+  .whatsapp-btn:hover { transform:scale(1.1); }
+  .whatsapp-pulse { position:absolute; width:100%; height:100%; border-radius:50%; background:#25D366; animation:wpulse 2s infinite; opacity:0.5; }
+  @keyframes wpulse { 0%{transform:scale(1);opacity:0.5} 100%{transform:scale(1.6);opacity:0} }
+
+  /* ANIMATIONS */
+  .fade-in { opacity:0; transform:translateY(24px); transition:opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity:1; transform:translateY(0); }
+
+  @media (max-width:900px) {
+    nav { padding:1.2rem 1.5rem; }
+    .nav-links { display:none; }
+    section { padding:5rem 1.5rem; }
+    .hero { padding:0 1.5rem; padding-top:6rem; min-height:auto; padding-bottom:4rem; }
+    .hero-stats { position:static; margin-top:3rem; gap:2rem; }
+    .why-grid, .golden-visa-inner, .contact-inner, .calc-grid { grid-template-columns:1fr; gap:2.5rem; }
+    .property-grid, .areas-grid, .testimonial-grid { grid-template-columns:1fr; }
+    .process-steps { grid-template-columns:1fr 1fr; }
+    .process-steps::before { display:none; }
+    .footer-top { grid-template-columns:1fr 1fr; gap:2rem; }
+    .portfolio-header { flex-direction:column; align-items:flex-start; gap:1rem; }
+    .form-row { grid-template-columns:1fr; }
+    .hero-stats { flex-wrap:wrap; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">ANTHONY <span>DAVID</span></div>
+  <ul class="nav-links">
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#areas">Top Areas</a></li>
+    <li><a href="#golden-visa">Golden Visa</a></li>
+    <li><a href="#roi">ROI Calculator</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book Consultation</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Anthony David — Dubai Investment Expert</div>
+    <h1>Own the Future.<br>Invest in <em>Dubai.</em></h1>
+    <p class="hero-sub">Access world-class real estate with exceptional ROI, 0% income tax, and a direct pathway to UAE residency. Your wealth deserves the world's fastest-growing market.</p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn-primary">Explore Properties</a>
+      <a href="#roi" class="btn-ghost">Calculate Your ROI</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">8–12%</div>
+      <div class="hero-stat-label">Average Annual ROI</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">0%</div>
+      <div class="hero-stat-label">Income Tax</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">AED 2M</div>
+      <div class="hero-stat-label">Golden Visa Threshold</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DUBAI -->
+<section class="why-dubai fade-in" id="why">
+  <div class="why-grid">
+    <div>
+      <p class="section-label">Why Dubai</p>
+      <h2>The World's Most <em>Investor-Friendly</em> Market</h2>
+      <div class="divider"></div>
+      <div class="why-points">
+        <div class="why-point">
+          <div class="why-point-num">01</div>
+          <div>
+            <h3>Zero Taxation Environment</h3>
+            <p>No income tax, no capital gains tax, no inheritance tax. Your returns stay exactly where they belong — with you.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-num">02</div>
+          <div>
+            <h3>Exceptional Rental Yields</h3>
+            <p>Dubai consistently delivers 6–12% annual yields — significantly outperforming London, New York, and Singapore.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-num">03</div>
+          <div>
+            <h3>Regulated & Transparent Market</h3>
+            <p>RERA oversight, escrow-protected off-plan purchases, and clear freehold ownership laws protect every investment.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-num">04</div>
+          <div>
+            <h3>Global Hub, World-Class Lifestyle</h3>
+            <p>Ranked #1 for quality of life in the MENA region. 200+ nationalities. Top infrastructure, safety, and connectivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-visual fade-in">
+      <div class="why-visual-title">Comparative Gross Rental Yields (2024)</div>
+      <div class="roi-bar">
+        <div class="roi-bar-label"><span>Dubai (Business Bay)</span><span>10.2%</span></div>
+        <div class="roi-bar-track"><div class="roi-bar-fill" style="width:85%"></div></div>
+      </div>
+      <div class="roi-bar">
+        <div class="roi-bar-label"><span>Dubai (JVC)</span><span>9.1%</span></div>
+        <div class="roi-bar-track"><div class="roi-bar-fill" style="width:76%"></div></div>
+      </div>
+      <div class="roi-bar">
+        <div class="roi-bar-label"><span>Dubai (Palm Jumeirah)</span><span>7.8%</span></div>
+        <div class="roi-bar-track"><div class="roi-bar-fill" style="width:65%"></div></div>
+      </div>
+      <div class="roi-bar">
+        <div class="roi-bar-label"><span>London (Zone 1)</span><span>3.1%</span></div>
+        <div class="roi-bar-track"><div class="roi-bar-fill" style="width:26%"></div></div>
+      </div>
+      <div class="roi-bar">
+        <div class="roi-bar-label"><span>New York (Manhattan)</span><span>2.7%</span></div>
+        <div class="roi-bar-track"><div class="roi-bar-fill" style="width:22%"></div></div>
+      </div>
+      <div class="roi-bar">
+        <div class="roi-bar-label"><span>Singapore</span><span>2.5%</span></div>
+        <div class="roi-bar-track"><div class="roi-bar-fill" style="width:21%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio fade-in" id="portfolio">
+  <div class="portfolio-header">
+    <div>
+      <p class="section-label">Investment Portfolio</p>
+      <h2>Curated <em>Properties</em></h2>
+    </div>
+    <a href="#contact" class="btn-ghost">View All Listings</a>
+  </div>
+  <div class="property-grid">
+    <div class="property-card">
+      <div class="property-img">
+        <div class="property-img-bg">◈</div>
+        <div class="property-img-overlay"></div>
+        <div class="property-badge">Off-Plan</div>
+      </div>
+      <div class="property-body">
+        <div class="property-name">Elara Residences</div>
+        <div class="property-loc">📍 Downtown Dubai</div>
+        <div class="property-meta">
+          <div class="meta-item"><label>Price From</label><span>AED 1.8M</span></div>
+          <div class="meta-item"><label>Gross ROI</label><span class="highlight">9.4%</span></div>
+          <div class="meta-item"><label>Handover</label><span>Q3 2026</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img">
+        <div class="property-img-bg">◇</div>
+        <div class="property-img-overlay"></div>
+        <div class="property-badge">Golden Visa</div>
+      </div>
+      <div class="property-body">
+        <div class="property-name">Azure Marina Tower</div>
+        <div class="property-loc">📍 Dubai Marina</div>
+        <div class="property-meta">
+          <div class="meta-item"><label>Price From</label><span>AED 2.2M</span></div>
+          <div class="meta-item"><label>Gross ROI</label><span class="highlight">8.1%</span></div>
+          <div class="meta-item"><label>Handover</label><span>Ready</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img">
+        <div class="property-img-bg">△</div>
+        <div class="property-img-overlay"></div>
+        <div class="property-badge">High Yield</div>
+      </div>
+      <div class="property-body">
+        <div class="property-name">Vantage Point JVC</div>
+        <div class="property-loc">📍 Jumeirah Village Circle</div>
+        <div class="property-meta">
+          <div class="meta-item"><label>Price From</label><span>AED 680K</span></div>
+          <div class="meta-item"><label>Gross ROI</label><span class="highlight">10.8%</span></div>
+          <div class="meta-item"><label>Handover</label><span>Q1 2027</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img">
+        <div class="property-img-bg">⬡</div>
+        <div class="property-img-overlay"></div>
+        <div class="property-badge">Luxury</div>
+      </div>
+      <div class="property-body">
+        <div class="property-name">Crest Palm Villa</div>
+        <div class="property-loc">📍 Palm Jumeirah</div>
+        <div class="property-meta">
+          <div class="meta-item"><label>Price From</label><span>AED 12M</span></div>
+          <div class="meta-item"><label>Gross ROI</label><span class="highlight">7.2%</span></div>
+          <div class="meta-item"><label>Handover</label><span>Ready</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img">
+        <div class="property-img-bg">◈</div>
+        <div class="property-img-overlay"></div>
+        <div class="property-badge">Off-Plan</div>
+      </div>
+      <div class="property-body">
+        <div class="property-name">Meridian One</div>
+        <div class="property-loc">📍 Business Bay</div>
+        <div class="property-meta">
+          <div class="meta-item"><label>Price From</label><span>AED 1.1M</span></div>
+          <div class="meta-item"><label>Gross ROI</label><span class="highlight">11.2%</span></div>
+          <div class="meta-item"><label>Handover</label><span>Q4 2026</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card">
+      <div class="property-img">
+        <div class="property-img-bg">◻</div>
+        <div class="property-img-overlay"></div>
+        <div class="property-badge">New Launch</div>
+      </div>
+      <div class="property-body">
+        <div class="property-name">Solara Hills</div>
+        <div class="property-loc">📍 Dubai Hills Estate</div>
+        <div class="property-meta">
+          <div class="meta-item"><label>Price From</label><span>AED 3.5M</span></div>
+          <div class="meta-item"><label>Gross ROI</label><span class="highlight">7.9%</span></div>
+          <div class="meta-item"><label>Handover</label><span>Q2 2028</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process fade-in" id="process">
+  <p class="section-label">How It Works</p>
+  <h2>Your Investment <em>Journey</em></h2>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">01</div>
+      <div class="step-title">Free Consultation</div>
+      <p class="step-text">We assess your budget, goals, and risk profile to identify the ideal investment strategy for you.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">02</div>
+      <div class="step-title">Property Selection</div>
+      <p class="step-text">Our experts shortlist curated properties with the highest ROI potential matched to your criteria.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">03</div>
+      <div class="step-title">Legal & Paperwork</div>
+      <p class="step-text">We handle all DLD registration, SPA signing, escrow, and legal compliance on your behalf.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">04</div>
+      <div class="step-title">Manage & Earn</div>
+      <p class="step-text">Sit back as our property management team handles tenants, maintenance, and rental income.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GOLDEN VISA -->
+<section class="golden-visa fade-in" id="golden-visa">
+  <div class="golden-visa-inner">
+    <div>
+      <p class="section-label">UAE Golden Visa</p>
+      <h2>Invest. Reside. <em>Belong.</em></h2>
+      <div class="divider"></div>
+      <p style="color:var(--text-muted);font-size:0.9rem;font-weight:300;max-width:440px;">The UAE Golden Visa grants long-term residency to property investors, offering security, freedom, and access to one of the world's most progressive economies.</p>
+      <div class="visa-benefits">
+        <div class="visa-benefit">
+          <div class="visa-benefit-icon">⚑</div>
+          <div>
+            <h4>10-Year Renewable Residency</h4>
+            <p>Live, work, and travel freely with long-term visa security for you and your family.</p>
+          </div>
+        </div>
+        <div class="visa-benefit">
+          <div class="visa-benefit-icon">◎</div>
+          <div>
+            <h4>Family Sponsorship</h4>
+            <p>Sponsor your spouse, children, and parents under a single property investment.</p>
+          </div>
+        </div>
+        <div class="visa-benefit">
+          <div class="visa-benefit-icon">◈</div>
+          <div>
+            <h4>No Minimum Stay Required</h4>
+            <p>Maintain your visa regardless of how many days per year you spend in the UAE.</p>
+          </div>
+        </div>
+        <div class="visa-benefit">
+          <div class="visa-benefit-icon">◇</div>
+          <div>
+            <h4>Business & Banking Freedom</h4>
+            <p>Open UAE bank accounts, establish businesses, and access DIFC financial services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="visa-visual">
+      <div class="visa-threshold">
+        <div class="visa-amount">AED 2M</div>
+        <div class="visa-amount-label">Minimum property value to qualify</div>
+      </div>
+      <div class="visa-features">
+        <div class="visa-feature"><span class="visa-feature-label">Visa Duration</span><span class="visa-feature-val">10 Years (Renewable)</span></div>
+        <div class="visa-feature"><span class="visa-feature-label">Processing Time</span><span class="visa-feature-val">4–6 Weeks</span></div>
+        <div class="visa-feature"><span class="visa-feature-label">Family Members</span><span class="visa-feature-val">Included (Spouse + Children)</span></div>
+        <div class="visa-feature"><span class="visa-feature-label">Off-Plan Eligible</span><span class="visa-feature-val">Yes (50% paid)</span></div>
+        <div class="visa-feature"><span class="visa-feature-label">Minimum Stay Required</span><span class="visa-feature-val">None</span></div>
+        <div class="visa-feature"><span class="visa-feature-label">Nationalities Eligible</span><span class="visa-feature-val">All (180+ Countries)</span></div>
+      </div>
+      <a href="#contact" class="btn-primary" style="display:block;text-align:center;margin-top:2rem;">Check My Eligibility</a>
+    </div>
+  </div>
+</section>
+
+<!-- ROI CALCULATOR -->
+<section class="roi-calc fade-in" id="roi">
+  <p class="section-label">ROI Calculator</p>
+  <h2>Project Your <em>Returns</em></h2>
+  <div class="calc-wrap">
+    <div class="calc-grid">
+      <div class="calc-inputs">
+        <div class="input-group">
+          <label>Property Value (AED)</label>
+          <input type="number" id="propValue" value="2000000" min="500000" step="100000">
+        </div>
+        <div class="input-group">
+          <label>Expected Annual Yield (%)</label>
+          <input type="number" id="yieldRate" value="8.5" min="1" max="15" step="0.5">
+        </div>
+        <div class="input-group">
+          <label>Investment Area</label>
+          <select id="areaSelect">
+            <option value="Business Bay">Business Bay (avg 10.2%)</option>
+            <option value="JVC" selected>JVC (avg 9.1%)</option>
+            <option value="Dubai Marina">Dubai Marina (avg 8.1%)</option>
+            <option value="Downtown Dubai">Downtown Dubai (avg 7.5%)</option>
+            <option value="Palm Jumeirah">Palm Jumeirah (avg 7.2%)</option>
+            <option value="Dubai Hills">Dubai Hills (avg 7.9%)</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Investment Horizon (Years)</label>
+          <input type="number" id="horizon" value="5" min="1" max="20">
+        </div>
+        <div class="input-group">
+          <label>Capital Appreciation (%/year)</label>
+          <input type="number" id="appreciation" value="5" min="0" max="20" step="0.5">
+        </div>
+        <button class="btn-calc" onclick="calculateROI()">Calculate Returns</button>
+      </div>
+      <div class="calc-results">
+        <div class="calc-results-title">Projected Investment Returns</div>
+        <div class="calc-metric">
+          <div class="calc-metric-label">Annual Rental Income</div>
+          <div class="calc-metric-val" id="annualIncome">AED 170,000</div>
+          <div class="calc-metric-sub">Based on 8.5% gross yield</div>
+        </div>
+        <div class="calc-metric">
+          <div class="calc-metric-label">Total Rental Income (5 yrs)</div>
+          <div class="calc-metric-val" id="totalRental">AED 850,000</div>
+          <div class="calc-metric-sub">Gross rental accumulated</div>
+        </div>
+        <div class="calc-metric">
+          <div class="calc-metric-label">Projected Property Value</div>
+          <div class="calc-metric-val" id="projectedValue">AED 2,552,563</div>
+          <div class="calc-metric-sub">After 5 years at 5% appreciation</div>
+        </div>
+        <div class="calc-metric">
+          <div class="calc-metric-label">Total Return on Investment</div>
+          <div class="calc-metric-val" id="totalROI">AED 1,402,563</div>
+          <div class="calc-metric-sub">Rental income + capital gain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOP AREAS -->
+<section class="areas fade-in" id="areas">
+  <p class="section-label">Best Dubai ROI Areas</p>
+  <h2>Where to <em>Invest</em></h2>
+  <div class="areas-grid">
+    <div class="area-card" data-area="BB">
+      <div class="area-name">Business Bay</div>
+      <div class="area-type">Commercial & Residential</div>
+      <div class="area-roi">10.2%</div>
+      <div class="area-roi-label">Average Gross Yield</div>
+      <div class="area-stats" style="margin-top:1.5rem">
+        <div class="area-stat-row"><span>Avg Price / sqft</span><span>AED 1,850</span></div>
+        <div class="area-stat-row"><span>Min Investment</span><span>AED 900K</span></div>
+        <div class="area-stat-row"><span>Rental Demand</span><span>Very High</span></div>
+        <div class="area-stat-row"><span>Off-Plan Available</span><span>Yes</span></div>
+      </div>
+    </div>
+    <div class="area-card" data-area="JVC">
+      <div class="area-name">Jumeirah Village Circle</div>
+      <div class="area-type">Affordable Investment</div>
+      <div class="area-roi">9.1%</div>
+      <div class="area-roi-label">Average Gross Yield</div>
+      <div class="area-stats" style="margin-top:1.5rem">
+        <div class="area-stat-row"><span>Avg Price / sqft</span><span>AED 1,100</span></div>
+        <div class="area-stat-row"><span>Min Investment</span><span>AED 500K</span></div>
+        <div class="area-stat-row"><span>Rental Demand</span><span>High</span></div>
+        <div class="area-stat-row"><span>Off-Plan Available</span><span>Yes</span></div>
+      </div>
+    </div>
+    <div class="area-card" data-area="DM">
+      <div class="area-name">Dubai Marina</div>
+      <div class="area-type">Premium Waterfront</div>
+      <div class="area-roi">8.1%</div>
+      <div class="area-roi-label">Average Gross Yield</div>
+      <div class="area-stats" style="margin-top:1.5rem">
+        <div class="area-stat-row"><span>Avg Price / sqft</span><span>AED 2,100</span></div>
+        <div class="area-stat-row"><span>Min Investment</span><span>AED 1.4M</span></div>
+        <div class="area-stat-row"><span>Rental Demand</span><span>Very High</span></div>
+        <div class="area-stat-row"><span>Off-Plan Available</span><span>Yes</span></div>
+      </div>
+    </div>
+    <div class="area-card" data-area="DT">
+      <div class="area-name">Downtown Dubai</div>
+      <div class="area-type">Iconic Landmark District</div>
+      <div class="area-roi">7.5%</div>
+      <div class="area-roi-label">Average Gross Yield</div>
+      <div class="area-stats" style="margin-top:1.5rem">
+        <div class="area-stat-row"><span>Avg Price / sqft</span><span>AED 2,800</span></div>
+        <div class="area-stat-row"><span>Min Investment</span><span>AED 1.8M</span></div>
+        <div class="area-stat-row"><span>Rental Demand</span><span>Very High</span></div>
+        <div class="area-stat-row"><span>Off-Plan Available</span><span>Limited</span></div>
+      </div>
+    </div>
+    <div class="area-card" data-area="PJ">
+      <div class="area-name">Palm Jumeirah</div>
+      <div class="area-type">Ultra-Luxury Freehold</div>
+      <div class="area-roi">7.2%</div>
+      <div class="area-roi-label">Average Gross Yield</div>
+      <div class="area-stats" style="margin-top:1.5rem">
+        <div class="area-stat-row"><span>Avg Price / sqft</span><span>AED 4,500</span></div>
+        <div class="area-stat-row"><span>Min Investment</span><span>AED 3M</span></div>
+        <div class="area-stat-row"><span>Rental Demand</span><span>Premium</span></div>
+        <div class="area-stat-row"><span>Off-Plan Available</span><span>Rare</span></div>
+      </div>
+    </div>
+    <div class="area-card" data-area="DH">
+      <div class="area-name">Dubai Hills Estate</div>
+      <div class="area-type">Family & Lifestyle</div>
+      <div class="area-roi">7.9%</div>
+      <div class="area-roi-label">Average Gross Yield</div>
+      <div class="area-stats" style="margin-top:1.5rem">
+        <div class="area-stat-row"><span>Avg Price / sqft</span><span>AED 1,950</span></div>
+        <div class="area-stat-row"><span>Min Investment</span><span>AED 1.5M</span></div>
+        <div class="area-stat-row"><span>Rental Demand</span><span>High</span></div>
+        <div class="area-stat-row"><span>Off-Plan Available</span><span>Yes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials fade-in" id="testimonials">
+  <p class="section-label">Client Stories</p>
+  <h2>Trusted by <em>Global Investors</em></h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">Anthony David guided me through my first Dubai off-plan purchase seamlessly. Within 14 months I had a 9.4% yield and my Golden Visa approved. Exceptional service, exceptional results.</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">RS</div>
+        <div>
+          <div class="author-name">Rahul Sharma</div>
+          <div class="author-detail">Mumbai, India · 2 Properties</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">As a London-based investor tired of 2% yields, Dubai was a revelation. Anthony David found me a Business Bay studio at AED 780K earning AED 85K annually. The numbers simply don't lie.</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">EK</div>
+        <div>
+          <div class="author-name">Elena Kovacs</div>
+          <div class="author-detail">London, UK · 3 Properties</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">The Golden Visa process was handled completely for my family. Now we have 10-year UAE residency, a beautifully managed Marina apartment, and peace of mind. Worth every dirham.</div>
+      <div class="testimonial-author">
+        <div class="author-avatar">AM</div>
+        <div>
+          <div class="author-name">Ahmed Mansour</div>
+          <div class="author-detail">Cairo, Egypt · 1 Property</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact fade-in" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info">
+      <p class="section-label">Get In Touch</p>
+      <h2>Start Your <em>Investment</em> Today</h2>
+      <div class="divider"></div>
+      <p style="color:var(--text-muted);font-size:0.9rem;font-weight:300;max-width:380px;line-height:1.8;">Our investment consultants are available 7 days a week to help you identify, evaluate, and acquire the right Dubai property for your goals.</p>
+      <div class="contact-channels">
+        <a href="https://wa.me/971559505282?text=Hello%20Anthony%20David%2C%20I%20am%20interested%20in%20Dubai%20property%20investment" class="contact-channel" target="_blank">
+          <div class="channel-icon">💬</div>
+          <div>
+            <span class="channel-label">WhatsApp (Instant Response)</span>
+            <div class="channel-val">+971 55 950 5282</div>
+          </div>
+        </a>
+        <a href="tel:+971559505282" class="contact-channel">
+          <div class="channel-icon">📞</div>
+          <div>
+            <span class="channel-label">Office Line</span>
+            <div class="channel-val">+971 55 950 5282</div>
+          </div>
+        </a>
+        <a href="mailto:gcspdao@gmail.com" class="contact-channel">
+          <div class="channel-icon">✉</div>
+          <div>
+            <span class="channel-label">Email</span>
+            <div class="channel-val">gcspdao@gmail.com</div>
+          </div>
+        </a>
+        <div class="contact-channel">
+          <div class="channel-icon">📍</div>
+          <div>
+            <span class="channel-label">Office</span>
+            <div class="channel-val">Business Bay, Dubai, UAE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lead-form">
+      <div class="form-title">Book a Free Consultation</div>
+      <div class="form-row">
+        <div class="form-field">
+          <label>First Name</label>
+          <input type="text" placeholder="John">
+        </div>
+        <div class="form-field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@example.com">
+      </div>
+      <div class="form-field">
+        <label>WhatsApp / Phone</label>
+        <input type="tel" placeholder="+44 7911 123456">
+      </div>
+      <div class="form-field">
+        <label>Investment Budget</label>
+        <select>
+          <option>AED 500K – 1M</option>
+          <option>AED 1M – 2M</option>
+          <option selected>AED 2M – 5M</option>
+          <option>AED 5M – 10M</option>
+          <option>AED 10M+</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Primary Interest</label>
+        <select>
+          <option>Buy Property in Dubai</option>
+          <option>Dubai Off-Plan Investment</option>
+          <option>UAE Golden Visa Property</option>
+          <option>Best ROI Areas Advice</option>
+          <option>Property Management</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Tell us about your goals (optional)</label>
+        <textarea rows="3" placeholder="E.g. Looking for high-yield off-plan with Golden Visa eligibility..."></textarea>
+      </div>
+      <button class="btn-submit" onclick="handleSubmit()">Request Free Consultation →</button>
+      <div class="form-note">🔒 Your information is 100% confidential. RERA Licensed Brokerage.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">ANTHONY DAVID</div>
+      <div class="footer-tagline">Premium Dubai real estate investment advisory. Anthony David helps global investors build wealth through the UAE's extraordinary property market.</div>
+    </div>
+    <div class="footer-col">
+      <h5>Properties</h5>
+      <ul>
+        <li><a href="#portfolio">Off-Plan Projects</a></li>
+        <li><a href="#portfolio">Ready Properties</a></li>
+        <li><a href="#portfolio">Luxury Villas</a></li>
+        <li><a href="#portfolio">Commercial Units</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Investment</h5>
+      <ul>
+        <li><a href="#golden-visa">UAE Golden Visa</a></li>
+        <li><a href="#roi">ROI Calculator</a></li>
+        <li><a href="#areas">Top Areas</a></li>
+        <li><a href="#why">Why Dubai</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#contact">About Us</a></li>
+        <li><a href="#testimonials">Client Stories</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">© 2025 Anthony David Real Estate. All rights reserved. RERA License No. 12345.</div>
+    <div class="footer-rera">DLD Registered Broker · Escrow Protected Transactions</div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/971559505282?text=Hello%20Anthony%20David%2C%20I%20am%20interested%20in%20Dubai%20property%20investment" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp">
+  <div class="whatsapp-pulse"></div>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // ROI Calculator
+  function calculateROI() {
+    const val = parseFloat(document.getElementById('propValue').value) || 2000000;
+    const yld = parseFloat(document.getElementById('yieldRate').value) || 8.5;
+    const yrs = parseInt(document.getElementById('horizon').value) || 5;
+    const app = parseFloat(document.getElementById('appreciation').value) || 5;
+
+    const annual = val * (yld / 100);
+    const totalRental = annual * yrs;
+    const projVal = val * Math.pow(1 + app / 100, yrs);
+    const totalReturn = totalRental + (projVal - val);
+
+    const fmt = n => 'AED ' + Math.round(n).toLocaleString();
+    document.getElementById('annualIncome').textContent = fmt(annual);
+    document.getElementById('totalRental').textContent = fmt(totalRental);
+    document.getElementById('projectedValue').textContent = fmt(projVal);
+    document.getElementById('totalROI').textContent = fmt(totalReturn);
+  }
+
+  // Form submit
+  function handleSubmit() {
+    const btn = document.querySelector('.btn-submit');
+    btn.textContent = '✓ Request Received — We\'ll Contact You Within 2 Hours';
+    btn.style.background = '#2a6e3f';
+    btn.style.color = '#fff';
+  }
+
+  // Scroll animations
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Animate ROI bars on scroll
+  const barObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.roi-bar-fill').forEach(bar => {
+          const w = bar.style.width;
+          bar.style.width = '0%';
+          setTimeout(() => { bar.style.width = w; }, 100);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.why-visual').forEach(el => barObserver.observe(el));
+
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    nav.style.background = window.scrollY > 50 ? 'rgba(10,10,11,0.97)' : 'rgba(10,10,11,0.85)';
+  });
+</script>
+</body>
+</html>
